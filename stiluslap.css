@@ -1,0 +1,57 @@
+body {
+    margin: 10px;
+    background-image: url(kepek/gyurcsany_es_kuhar.png);
+    background-size: 130%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: purple;
+    padding: 1vh 8vw;
+}
+
+header p {
+    font-family: "Comic Sans MS";
+    font-size: 1.5em;
+    color: blue;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em;
+    color: black;
+}
+
+header a {
+    margin-bottom: 10px;
+}
+
+.barna {
+    color: brown;
+    text-align: center;
+    font-family: "comic sans ms";
+    font-size: 5em;
+}
+
+/* 
+                        TITKOS KEP BENCE KUHARROL A VONATPOTLO BUSZON
+                                           I
+                                           I
+                                           V
+
+ https://media.discordapp.net/attachments/1103375330380619927/1105388922424528926/IMG_1799.jpg 
+*/
+
+header h1 a {
+    color: coral;
+}
+
+a:hover {
+    color: chocolate;
+}
+
+.table {
+    margin-top: 5px;
+    width: 50%;
+}
