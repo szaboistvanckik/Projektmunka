@@ -73,3 +73,14 @@ header img:hover {
 /* * {
     filter: blur(10px)
 } */
+
+nav a {
+    padding: 20px;
+    color: #245878;
+    text-decoration: dashed underline;
+}
+
+nav a:hover {
+    transition: 0.3s;
+    color: #24587880;
+}
