@@ -10,7 +10,7 @@ body {
 header {
     background-color: #ffffff;
     border-bottom: 2px solid #e7ebef;
-    border-top: 2px solid ;
+    border-top: 1px solid black;
 }
 
 header div {
@@ -21,7 +21,7 @@ header div {
 }
 
 header h1 {
-    font-size: 6.2em;
+    font-size: 7vw;
     font-family: "Comic Sans MS";
     text-align: center;
     padding: 2px 2px;
@@ -30,7 +30,7 @@ header h1 {
 }
 
 header img {
-    width: 2em;
+    width: 10vw;
 }
 
 
@@ -46,7 +46,7 @@ nav {
 .table {
     margin-top: 5px;
     width: 50%;
-    display: inline-block;
+    /* display: inline-block; */
     margin: 20px;
     padding: 20px;
 }
@@ -93,11 +93,33 @@ nav div>a:not(.active):hover {
     transition: 0.25s;
 }
 
-#smooth:not(.active):hover {
+.smooth:not(.active):hover {
     padding: 10px 17.5px;
     transition: 0.25s;
 }
 
-#smooth {
+.smooth {
     transition: 0.25s;
-}
+} 
+
+/* SCROLLBAR CONFIG */
+
+  /* Szélesség */
+body::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  /* Háttér */
+body::-webkit-scrollbar-track {
+    background: #ebebeb; 
+  }
+   
+  /* Görgető */
+body::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Görgető amikor ráviszed az egeret */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
