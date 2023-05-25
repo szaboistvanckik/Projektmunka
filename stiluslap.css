@@ -46,9 +46,10 @@ nav {
 .table {
     margin-top: 5px;
     width: 50%;
-    /* display: inline-block; */
     margin: 20px;
     padding: 20px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 section {
@@ -56,7 +57,9 @@ section {
     border: black solid 3px;
     margin: 70px 200px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 90%)
+    background-color: rgba(255, 255, 255, 90%);
+    overflow: hidden;
+    text-shadow: 3px 3px 8px rgba(166,166,166,0.2);
 }
 
 header img:hover {
@@ -122,4 +125,26 @@ body::-webkit-scrollbar-thumb {
   /* Görgető amikor ráviszed az egeret */
 body::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  }
+}
+
+footer {
+    border-radius: 5px;
+    border: black solid 3px;
+    background-color: rgba(255, 255, 255, 90%);
+    margin-top: -55px;
+    margin-bottom: 70px;
+    background-color: rgb(28, 121, 28);
+    padding: 10px;
+    font-family: "Comic Sans MS";
+}
+
+footer a {
+    font-size: 3.5vh;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
