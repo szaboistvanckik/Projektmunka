@@ -153,6 +153,7 @@ section h2 {
     text-decoration: underline;
     font-weight: bold;
     font-family: cursive;
+    padding-bottom: 20px;
 }
 
 section a {
@@ -160,5 +161,18 @@ section a {
 }
 
 iframe {
-    float: left;
+    display: block;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+section a img:hover {
+    cursor: zoom-in;
+}
+
+@media screen and (max-width: 768px) {
+    iframe {
+        /* height: 100%; */
+        width: 100%;
+    }
 }
