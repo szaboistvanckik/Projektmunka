@@ -148,3 +148,17 @@ footer a {
 footer a:hover {
     font-weight: bold;
 }
+
+section h2 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+section a {
+    color: #245878;
+}
+
+iframe {
+    float: left;
+}
