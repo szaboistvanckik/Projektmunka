@@ -21,7 +21,8 @@ header div {
 }
 
 header h1 {
-    font-size: 7vw;
+    /* tehát alapbol 7vw de minimum 50px */
+    font-size: max(7vw, 40px);
     font-family: "Comic Sans MS";
     text-align: center;
     padding: 2px 2px;
@@ -31,6 +32,7 @@ header h1 {
 
 header img {
     width: 10vw;
+    min-width: 100px;
 }
 
 
@@ -50,6 +52,11 @@ nav {
     padding: 20px;
     text-align: center;
     vertical-align: middle;
+    overflow-x: scroll;
+}
+
+table {
+    overflow-x: scroll;
 }
 
 section {
@@ -63,8 +70,12 @@ section {
 }
 
 header img:hover {
-    filter: saturate(1000050%);
+    filter: saturate(1000%);
     transition: 5s;
+}
+
+header img {
+    transition: 1s;
 }
 
 .active {
@@ -108,7 +119,7 @@ nav div>a:not(.active):hover {
 /* SCROLLBAR CONFIG */
 
   /* Szélesség */
-body::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     width: 1vw;
   }
   
@@ -168,11 +179,42 @@ iframe {
 
 section a img:hover {
     cursor: zoom-in;
+    filter: brightness(80%);
+    transition: 0.5s;
 }
+
+section a img {
+    transition: 0.5s;
+}
+
+.w-50 {
+    min-width: 50%;
+}
+
+section div table {
+    height: 25vw;
+}
+
 
 @media screen and (max-width: 768px) {
     iframe {
         /* height: 100%; */
         width: 100%;
+    }
+
+    .overflow {
+        overflow-x: auto;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .maxr {
+        max-height: 550px;
+    }
+    header img {
+        max-width: 5vw;
+    }
+    header h1 {
+        font-size: max(3px, 3vw);
     }
 }
