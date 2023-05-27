@@ -218,3 +218,7 @@ section div table {
         font-size: max(3px, 3vw);
     }
 }
+
+.w-50 {
+    min-width: 50%
+    }
