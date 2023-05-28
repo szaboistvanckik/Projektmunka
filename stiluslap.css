@@ -22,12 +22,17 @@ header div {
 
 header h1 {
     /* tehát alapbol 7vw de minimum 50px */
-    font-size: max(7vw, 40px);
+    font-size: max(7vw, 50px);
     font-family: "Comic Sans MS";
     text-align: center;
     padding: 2px 2px;
     color: #000000;
     text-decoration: underline black;
+    transition: 1s;
+}
+
+nav {
+    transition: 1s;
 }
 
 header img {
@@ -72,6 +77,11 @@ section {
 header img:hover {
     filter: saturate(1000%);
     transition: 5s;
+    cursor: grab;
+}
+
+header img:active {
+    cursor: grabbing;
 }
 
 header img {
@@ -119,7 +129,7 @@ nav div>a:not(.active):hover {
 /* SCROLLBAR CONFIG */
 
   /* Szélesség */
-  body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 1vw;
   }
   
@@ -167,8 +177,24 @@ section h2 {
     padding-bottom: 20px;
 }
 
+h3 {
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+    font-size: 1.5em;
+    text-decoration: underline solid black 3px;
+}
+
 section a {
     color: #245878;
+    font-weight: 600;
+}
+
+section a:hover {
+    color: #45a3de;
+}
+
+section a:visited {
+    color: #4e2478;
 }
 
 iframe {
@@ -187,7 +213,7 @@ section a img {
     transition: 0.5s;
 }
 
-.w-50 {
+.w-50, .w-100 {
     min-width: 50%;
 }
 
@@ -219,6 +245,35 @@ section div table {
     }
 }
 
-.w-50 {
-    min-width: 50%
-    }
+
+.titletext {
+    cursor: help;
+    font-style: italic;
+    text-decoration: underline dashed black 1px;
+}
+
+.beugrastext {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: 5px 4px 8px rgba(0,0,0,0.35);
+    background-color: pink;
+    border-radius: 5px;
+    border: black 2px dashed;
+}
+
+.videocimtext {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4em;
+    font-style: italic;
+    text-shadow: 6px 3px 9px rgba(0,0,0,0.4);
+}
+
+.nograb {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
