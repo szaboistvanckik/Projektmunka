@@ -51,7 +51,6 @@ nav {
 }
 
 .table {
-    margin-top: 5px;
     width: 50%;
     margin: 20px;
     padding: 20px;
@@ -221,30 +220,9 @@ section div table {
     height: 25vw;
 }
 
-
-@media screen and (max-width: 768px) {
-    iframe {
-        /* height: 100%; */
-        width: 100%;
-    }
-
-    .overflow {
-        overflow-x: auto;
-    }
+.logokep {
+    float: right;
 }
-
-@media screen and (min-width: 2200px) {
-    .maxr {
-        max-height: 550px;
-    }
-    header img {
-        max-width: 5vw;
-    }
-    header h1 {
-        font-size: max(3px, 3vw);
-    }
-}
-
 
 .titletext {
     cursor: help;
@@ -277,3 +255,49 @@ section div table {
     -ms-user-select: none;
 }
 
+.platformtext {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-style: italic;
+    text-shadow: 6px 3px 9px rgba(0,0,0,0.4);
+}
+
+hr {
+    height: 10px;
+    background-color: black;
+    opacity: 80%;
+}
+
+@media screen and (max-width: 992px) {
+    .logokep {
+        float: none;
+        margin: auto;
+    }
+    .platformtext {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    iframe {
+        /* height: 100%; */
+        width: 100%;
+    }
+
+    .overflow {
+        overflow-x: auto;
+    }
+}
+
+
+@media screen and (min-width: 2200px) {
+    .maxr {
+        max-height: 400px;
+    }
+    header img {
+        max-width: 5vw;
+    }
+    header h1 {
+        font-size: max(3px, 3vw);
+    }
+}
