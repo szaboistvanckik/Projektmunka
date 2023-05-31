@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(kepek/hatter.jpg);
     background-size: 130%;
@@ -21,9 +25,9 @@ header div {
 }
 
 header h1 {
-    /* tehát alapbol 7vw de minimum 50px */
-    font-size: max(7vw, 50px);
-    font-family: "Comic Sans MS";
+    /* font-size: max(100px, 5vw); */
+    font-size: 10vh;
+    font-family: "Comic Sans MS", cursive;
     text-align: center;
     padding: 2px 2px;
     color: #000000;
@@ -38,6 +42,7 @@ nav {
 header img {
     width: 10vw;
     min-width: 100px;
+    max-width: 200px;
 }
 
 
@@ -155,7 +160,7 @@ footer {
     margin-bottom: 70px;
     background-color: rgb(28, 121, 28);
     padding: 10px;
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", cursive;
 }
 
 footer a {
@@ -178,7 +183,7 @@ section h2 {
 
 h3 {
     font-weight: bold;
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", cursive;
     font-size: 1.5em;
     text-decoration: underline solid black 3px;
 }
@@ -194,6 +199,10 @@ section a:hover {
 
 section a:visited {
     color: #4e2478;
+}
+
+section a:visited:hover {
+    color: #9259ca;
 }
 
 iframe {
@@ -218,6 +227,7 @@ section a img {
 
 section div table {
     height: 25vw;
+    max-height: 550px;
 }
 
 .logokep {
@@ -282,6 +292,9 @@ hr {
     .platformtext {
         text-align: center;
     }
+    header h1 {
+        font-size: max(60px, 4vw);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -290,20 +303,24 @@ hr {
         width: 100%;
     }
 
+    header h1 {
+        font-size: max(40px, 4vw);
+    }
+
+    section a img {
+        float: none;
+        width: 100%;
+    }
+
     .overflow {
         overflow-x: auto;
     }
 }
 
-
-@media screen and (min-width: 2200px) {
-    .maxr {
-        max-height: 400px;
-    }
+@media screen and (min-width: 2000px) {
+    
     header img {
-        max-width: 5vw;
-    }
-    header h1 {
-        font-size: max(3px, 3vw);
+        max-width: 500px;
+        min-width: 200px;
     }
 }
